@@ -2,7 +2,7 @@ import ProductRow from '../ProductRow/ProductRow';
 import './ProductTable.css';
 import data from '../../data.json';
 
-function ProductTable(props) {
+function ProductTable() {
     return (
         <div className="productTable">
             <h1>Product Table</h1>

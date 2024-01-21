@@ -1,0 +1,21 @@
+.brands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.brand {
+    background: darkslategray;
+    color: azure;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 0 10px;
+    opacity: 1;
+}
+
+.brand:hover {
+    opacity: 0.7;
+}
