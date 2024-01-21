@@ -3,14 +3,16 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid lightblue;
+    border: 1px solid darkslategray;
     justify-items: center;
     align-items: center;
     gap: 10px;
     margin: 7px 0;
 }
 
-.product_title {}
+.product_title {
+    color: darkslategray;
+}
 
 .product_images {
     display: flex;
