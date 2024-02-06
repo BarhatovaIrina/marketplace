@@ -1,0 +1,3 @@
+export const ADD_PRODUCTS = 'ADD_PRODUCTS'
+export const PRODUCT_LIKE = 'PRODUCT_LIKE'
+export const PRODUCT_DISLIKE = 'PRODUCT_DISLIKE'

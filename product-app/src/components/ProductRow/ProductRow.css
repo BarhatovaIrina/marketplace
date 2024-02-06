@@ -8,7 +8,9 @@
     align-items: center;
     gap: 10px;
     margin: 7px 0;
+    position: relative;
 }
+
 
 .product_title {
     color: darkslategray;
@@ -24,4 +26,24 @@
 .product_img {
     width: 50px;
     margin-right: 10px;
+}
+
+.product_images_control {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    /* height: 30px; */
+    justify-items: center;
+}
+
+.product_images_control img {
+    width: 30px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.product_images_control img:hover {
+    opacity: 1;
 }
