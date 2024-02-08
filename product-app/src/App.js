@@ -1,6 +1,5 @@
 import './App.css';
 import Error from './components/Error/Error';
-import FilterableProductTable from './components/FilterableProductTable/FilterableProductTable';
 import Header from './components/Header/Header';
 import ProductTable from './components/ProductTable/ProductTable';
 import {
@@ -15,8 +14,9 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<ProductTable />}></Route>
-          <Route path="/filter" element={<FilterableProductTable />}></Route>
+          <Route path="/" element={<ProductTable filterLike={false} filterBrand={false} />}></Route>
+          <Route path="/brand" element={<ProductTable filterLike={false} filterBrand={true} />}></Route>
+          <Route path="/liked" element={<ProductTable filterLike={true} filterBrand={false} />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </div>
