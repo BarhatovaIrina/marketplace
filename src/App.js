@@ -14,9 +14,9 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<ProductTable filterLike={false} filterBrand={false} />}></Route>
-          <Route path="/brand" element={<ProductTable filterLike={false} filterBrand={true} />}></Route>
-          <Route path="/liked" element={<ProductTable filterLike={true} filterBrand={false} />}></Route>
+          <Route path="/marketplace/" element={<ProductTable filterLike={false} filterBrand={false} />}></Route>
+          <Route path="/marketplace/brand" element={<ProductTable filterLike={false} filterBrand={true} />}></Route>
+          <Route path="/marketplace/liked" element={<ProductTable filterLike={true} filterBrand={false} />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </div>
