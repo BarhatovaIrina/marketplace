@@ -1,4 +1,5 @@
 # Product app
+<a href="https://barhatovairina.github.io/marketplace/product-app">App</a>
 - 2 main components have been created in the application: ProductRow & ProductTable 
 - add react-rounting
 - add FilterableProductTable & ProductBrandSelection (children component)
