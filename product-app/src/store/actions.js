@@ -2,15 +2,20 @@ import * as actions from './actionTypes'
 
 export const addLike = id => ({
     type: actions.PRODUCT_LIKE,
-    payload: { id }
+    payload: id
 })
 
 export const removeLike = id => ({
     type: actions.PRODUCT_DISLIKE,
-    payload: { id }
+    payload: id
 })
 
-export const addProducts = (products) => ({
+export const addProducts = data => ({
     type: actions.ADD_PRODUCTS,
-    payload: { products }
-});
+    payload: data
+})
+
+export const deleteProduct = id => ({
+    type: actions.PRODUCT_DELETE,
+    payload: id
+})

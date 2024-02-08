@@ -47,3 +47,8 @@
 .product_images_control img:hover {
     opacity: 1;
 }
+
+.liked {
+    border: 2px solid darkslategray;
+    background: lightgray;
+}

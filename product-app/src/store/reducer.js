@@ -11,20 +11,23 @@ export default function reducer(state = initialState, action) {
         case actions.PRODUCT_LIKE:
             return {
                 ...state,
-                likedProducts: [...state.likedProducts, action.id]
+                likedProducts: [...state.likedProducts, action.payload]
             };
         case actions.PRODUCT_DISLIKE:
             return {
                 ...state,
-                likedProducts: state.likedProducts.filter(id => id !== action.id)
+                likedProducts: state.likedProducts.filter(id => id !== action.payload)
             };
         case actions.ADD_PRODUCTS:
-            // console.log('add')
-            // console.log(action.payload.products)
-            // console.log(state.products)
             return {
                 ...state,
-                products: [action.payload.products]
+                products: action.payload.products,
+                isLoading: action.payload.isLoading
+            };
+        case actions.PRODUCT_DELETE:
+            return {
+                ...state,
+                products: state.products.filter(product => product.id !== action.payload)
             };
         default:
             return state;
